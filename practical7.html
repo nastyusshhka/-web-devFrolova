@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with Answers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><b>1. Explain “repaint” and “reflow” of the webpage</b>
+            <p>Answer: <i>Repaint</i> is about updating the appearance, when something changes visually (like color or text), the browser needs to repaint that part of the page. <i>Reflow</i> is when elements on a web page change position or size, the browser needs to recalculate where everything goes. This can happen when you add or remove elements, change styles, or resize the window.
+            </p>
+        </div>
+        
+        <div class="item"><b>2. How does JavaScript on the webpage affects the page load speed and performance?</b>
+            <p>Answer: When the browser loads JavaScript files, it can slow down the page loading speed, especially if the JavaScript files are large or a lot, JavaScript is used to add interactivity to the page, which can also slow down the loading process. To improve site loading, you can use loading attribute, minify and compress JavaScript code.
+            </p>
+        </div>
+        <div class="item"><b>3. What is “minification” of the script? Why it is useful to minify your scripts?</b>
+            <p>Answer:  Minification is the process of minimizing code and markup in your web pages and script files. It's useful, because it helps reduce file size and improve loading.
+            </p>
+        </div>
+        <div class="item"><b>4. What is a JS Web Worker and when do we need it?</b>
+            <p>Answer: Web Workers makes it possible to run a script operation in a background thread separate from the main execution thread of a web application. 
+            </p>
+        </div>
+        <div class="item"><b>Sources:</b>
+            <ul>
+                <li>Explanation of repaint and reflow: <a href="https://dev.to/gopal1996/understanding-reflow-and-repaint-in-the-browser-1jbg">Answer #1</a></li>
+                <li>Impact of JavaScript on page load speed: <a href="https://developer.mozilla.org/en-US/docs/Learn/Performance/JavaScript">Answer #2</a></li>
+                <li>Benefits of script minification: <a href="https://www.imperva.com/learn/performance/minification/#:~:text=Minification%20is%20the%20process%20of,into%20a%20better%20user%20experience.">Answer #3</a></li>
+                <li>Introduction to JS Web Workers: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API">Answer #4</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 5000
+            });
+        });
+    </script>
+</body>
+
+</html>
